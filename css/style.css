@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 36px;
+}
+
+
+main div.acess div{
+    display: flex;
+}
+
+main div.acess > div{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#image-insta img{
+    max-width: 350px;
+}
+
+.acess{
+    max-width: 380px;
+}
+
+#login-insta{
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding: 10px;
+}
+
+#login-insta > div{
+    margin-top: 1rem;
+}
+
+#login-insta > img{
+    width: 60%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+form label{
+    font-size: 1rem;
+    color: #aaa;
+    padding: 5px;
+    border: none;
+    background: none;
+    height: fit-content;
+    width: fit-content;
+    z-index: 2;
+}
+
+form > .input-label{
+    position: relative;
+    width: 80%;
+    height: 2.2rem;
+    margin: auto;
+    margin-bottom: .5rem;
+}
+
+input:focus ~ label,
+input:required:not(:placeholder-shown) ~ label
+{
+    top: -0.5rem;
+    font-size: .65rem;
+    background: linear-gradient(to bottom, #fff, #eee);
+    height: 1rem;
+    margin-left: 0.5rem;
+    color: #444;
+    font-weight: 600;
+}
+
+
+label, input:not(:last-child){
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    background: #eee;
+    outline: none;
+    font-size: .7rem;
+    font-weight: 200;
+    animation: all 3s;
+}
+
+form input[type='button']{
+    width: 80%;
+    height: 2rem;
+    margin: auto;
+    margin-top: .5rem;
+    color: #fff;
+    font-weight: bold;
+    background-color: #1a7aff;
+    border-radius: 5px;
+}
+
+form input[type='button']:active{
+    background-color: #4a8ff0;
+}
+
+form input[type='button']:hover{
+    cursor: pointer;
+    background-color: #3285fa;
+}
+
+#separator p{
+    color: #444;
+    font-weight: bold;
+    width: 100%;
+    text-decoration-line: line-through;
+}
+
+#login-with-facebook a{
+    font-weight: bold;
+    color: #1608b8;
+}
+
+#recovery-passwd a{
+    font-size: .8em;
+}
+
+#signup-insta{
+    padding: 10px;
+}
+
+#signup-insta a{
+    color: #3285fa;
+    font-weight: bold;
+}
+
+
+#signup-insta p{
+    margin: auto;
+    padding: 5px 12px;
+}
+
+#get-insta{
+    flex-direction: column;
+    border: 0;
+}
+
+#get-insta p{
+    margin-bottom: 1rem;
+}
+
+.get-on > a, .get-on img{
+    width: 100%;
+    height: 45px;
+}
