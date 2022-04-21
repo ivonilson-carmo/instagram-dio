@@ -10,13 +10,16 @@
 
 body{
     background-color: #fcfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 main{
     display: flex;
     justify-content: center;
-    margin: auto;
-    margin-top: 36px;
 }
 
 
@@ -173,4 +176,20 @@ form input[type='button']:hover{
 .get-on > a, .get-on img{
     width: 100%;
     height: 45px;
+}
+
+@media (max-width: 785px){
+    #image-insta{
+        display: none;
+    }
+
+    form > div.input-label > label{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 420px){
+    .acess{
+        width: 80%;
+    }
 }
